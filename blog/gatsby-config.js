@@ -16,11 +16,17 @@ module.exports = {
     contact: {
       name: `Dayton Kotas`,
       company: `Blog Inc`,
-      address: `PO Box 1234`
-    }
+      address: `PO Box 1234`,
+    },
   },
   plugins: [
-    `gatsby-plugin-image`,
+    {
+      reslove: `gatsby-source-filesystem`,
+      options: {
+        spaceId: `aq7dn9s4itvu`,
+        accessToken: `K6Qy2fTSgoGiB2eLjklvmVQSfB1P8AbCCXeSAHMjFck`,
+      },
+    }`gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
