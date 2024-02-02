@@ -21,12 +21,13 @@ module.exports = {
   },
   plugins: [
     {
-      reslove: `gatsby-source-filesystem`,
+      resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `aq7dn9s4itvu`,
-        accessToken: `K6Qy2fTSgoGiB2eLjklvmVQSfB1P8AbCCXeSAHMjFck`,
-      },
-    }`gatsby-plugin-image`,
+        accessToken: `K6Qy2fTSgoGiB2eLjklvmVQSfB1P8AbCCXeSAHMjFck`
+      }
+    },
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
