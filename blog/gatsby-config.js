@@ -4,6 +4,9 @@
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
  */
 
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+})
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
@@ -23,9 +26,11 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `aq7dn9s4itvu`,
-        accessToken: `K6Qy2fTSgoGiB2eLjklvmVQSfB1P8AbCCXeSAHMjFck`
-      }
+        //SpaceID=aq7dn9s4itvu
+        //AccessToken=K6Qy2fTSgoGiB2eLjklvmVQSfB1P8AbCCXeSAHMjFck
+        spaceId: `${process.env.SPACE_ID}`,
+        accessToken: `${process.env.ACCESS_TOKEN}`,
+      },
     },
     `gatsby-plugin-image`,
     {
