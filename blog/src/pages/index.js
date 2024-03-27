@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => (
           <Link to={edge.node.slug}>{edge.node.title}</Link>
           <div>
             <GatsbyImage 
-              image={edge.node.heroImage.gatsbyImageData} />
+              image={edge.node.hero.gatsbyImageData} />
           </div>
           <div>
             {edge.node.body.childMarkdownRemark.excerpt}
@@ -30,7 +30,7 @@ const IndexPage = ({ data }) => (
   </Layout>
 )
 
-export const Head = () => <Seo title="Home" />
+export const Head = () => <SEO title="Home" />
 
 export default IndexPage
 
