@@ -22,4 +22,3 @@ IconButton.defaultProps = {
 IconButton.propTypes = {
   icon: PropTypes.node.isRequired
 }
-
